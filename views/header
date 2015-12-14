@@ -1,0 +1,12 @@
+<header class="header">
+<div class="container-fluid>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img class="logo-style" src="images/Cigna_Accenture_Logo.png">
+        <p class="brand-style">Testing DashBoard</p>
+      </a>
+    </div>
+ </nav>
+ </div>
+ </header>
