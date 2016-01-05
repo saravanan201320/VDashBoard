@@ -1,0 +1,12 @@
+<div ng-controller="SelectedASGPageController">
+  <div class="row">
+    <div class="col-md-10 col-sm-10"> 
+      <h4 align="center" style="padding-left: 100px;"><b>{{ASGTitleName.title}}</b></h4>
+    </div>
+    <div class="col-md-2 col-sm-2">
+      <a href="" ng-click="backBtn()"><h4 class="pull-right">&lt; Back<h4></a>
+    </div>
+  </div>
+  <div google-chart chart="chartObject1" on-select="seriesSelected(selectedItem)" on-ready="onChartReady()"/>
+</div>
+

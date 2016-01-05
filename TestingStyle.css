@@ -1,0 +1,364 @@
+/*@font-face {
+    font-family: 'AccentureFont';
+    src: local('agfarotissansserif.ttf'), url('agfarotissansserif.eot') format('embedded-opentype'), url('agfarotissansserif.ttf') format('truetype'), url('agfarotissansserif.svg') format('svg');
+    font-style: normal;
+    font-weight: normal; 
+}*/
+
+/*@font-face{
+    @font-face{font-family:"AccentureFont";
+    src:url(acncustomfont.eot);
+    src:local(":P"),url(acncustomfont.eot?#iefix) format("embedded-opentype"),
+    url(acncustomfont.woff) format("woff"),
+    url(acncustomfont.svg#acncustomfont) format("svg"),
+    url(acncustomfont.ttf) format("truetype"),
+    url(acncustomfont.otf) format("opentype");
+    font-weight:normal;
+    font-style:normal;
+  }
+*/
+/*body{
+  font-family: AccentureFont;
+}
+div {
+    font-family: AccentureFont;
+}
+
+p {
+  font-family: AccentureFont;
+}
+
+table{
+ font-family: AccentureFont; 
+}*/
+
+@font-face {
+  font-family: 'AccentureFont';
+  src: url('rotsanl.woff') format('woff'),
+       url('rotsanl.ttf') format('truetype'),
+       url('rotsanl.svg#AccentureRotis') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 0px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.container .jumbotron{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white; 
+}
+
+body, div, p, table, b, a{
+  font-family: "AccentureFont";
+}
+
+
+.col-md-1 {
+    width: 2%;
+}
+
+.wrapper{
+    padding-left: 155px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* optional */
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.logo-style{
+  width: 75%;
+  /*position: relative;
+  top: -10px;*/
+}
+
+.brand-style{
+/*right: 368px;
+position: absolute;
+top: -10px;*/
+}
+
+.navbar{
+
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  background-color: white;
+}
+
+.navbar-default{
+  border-color: lightgrey;
+}
+
+.body-style{
+  position: absolute;
+  left: 240px;
+}
+
+.horizontal-line{
+ /* margin-top: -440px;
+margin-bottom: 7px;*/
+border-width: 1px 0px 0px;
+border-style: solid none none;
+border-color: lightgrey;
+}
+
+
+#group1Div {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+}
+
+#group2Div {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+#group3Div {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+
+#group4Div {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+
+
+.group1{
+    border-radius: 25px;
+   background: #8AC007;
+   /* background: #BAEB9D;*/
+  width: 375px;
+  height: 263px;
+}
+.group-icon{
+    padding: 7px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+
+.group2{
+    border-radius: 25px;
+    background: #ff6666;
+  width: 375px;
+  height: 263px;
+}
+
+.group3{
+    border-radius: 25px;
+    background: skyblue;
+  width: 375px;
+  height: 263px;
+  position: relative;
+  bottom: -10px;
+}
+
+.group4{
+    border-radius: 25px;
+    background: #ffb3da;
+  width: 375px;
+  height: 263px;
+  position: relative;
+  bottom: -10px;
+  /*background-image: url("../images/dental-logo.jpg");*/
+  /*background-size: 50%;*/
+}
+
+.group-btn1{
+    margin-top: 310px;
+    width: 20%;
+    margin-left: 640px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.group-btn2{
+    margin-top: 190px;
+    width: 20%;
+    margin-left: 640px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.group-btn3{
+    margin-top: 190px;
+    width: 20%;
+    margin-left: 640px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.group-btn4{
+  margin-top: 190px;
+  width: 12%;
+  margin-left: 930px;
+  background-color: transparent;
+  border-color: white;
+}
+
+.button{
+  height: 100px;
+  width: 160px;
+  border-top: 30px solid #C66;
+  border-bottom: 30px solid #6C6;
+  border-left: 30px solid #66C;
+  border-right: 30px solid #CC6;
+}
+
+.categorydd-style{
+  position: absolute;
+  top: -35px;
+  left: 170px;
+}
+
+.categorybtn-style{
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+.dropdown1{
+  left: 116px;
+  top: 0px;
+}
+
+.dropdown2{
+  left: 530px;
+  top: -30px;
+}
+
+.DD-Style{
+  top: 25px;
+  position: relative;
+  left: 55px;
+}
+
+.table-style{
+ position: relative;
+top: 30px;
+width: 62%;
+left: 50px;
+font-size: 9;
+}
+
+
+/*@media (min-width: 768px)*/
+    .modal-sm {
+        width: 447px !important;
+    }
+
+    th {
+    text-align: center;
+}

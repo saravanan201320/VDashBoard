@@ -1,0 +1,112 @@
+<div ng-controller="SelectedApplicationPageController">
+
+<div class="row">
+    <div class="col-md-10 col-sm-10"> 
+      <h4 align="center" style="padding-left: 100px;"><b>{{applicationTitleName.title}}</b></h4>
+    </div>
+    <div class="col-md-2 col-sm-2">
+      <a href="" ng-click="backBtn()"><h4 class="pull-right">&lt; Back<h4></a>
+    </div>
+  </div>
+  <div google-chart chart="chartObject2" on-ready="onChartReady()"/>
+	<!-- <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/">
+        <img class="logo-style" src="images/cigna_logo.png">
+</a>
+        <h3 class="brand-style"><b>Regression DashBoard</b></h3>
+      
+    </div>
+
+  </nav>
+  <div>
+  
+  <p style="position: relative;left: 150px;"> Business Capability :
+        <div class="dropdown dropdown1">
+          <select class="btn  dropdown-toggle categorydd-style categorybtn-style" style="width: 180px;" ng-model="selectedItem"
+                  ng-change="RXHDBussiness(selectedItem)"
+                  ng-options="RXHDBusinessCapability for RXHDBusinessCapability in RXHDBusinessCapabilitys"
+                  value="{{RXHDBusinessCapability}}">
+            <option value="">---Please select---</option>
+          </select>
+        </div>
+  </p>
+  <p style="position: relative;left: 600px;top: -29px;">
+          Functionality :
+        <div class="dropdown dropdown2" ng-hide="RXHDApplicationDD">
+          <select class="btn  dropdown-toggle categorydd-style categorybtn-style" ng-model="selectedItem"
+                  ng-change="RXHDFunctionality(selectedItem)"
+                  ng-options="RXHDFunctionality for RXHDFunctionality in RXHDFunctionalitys"
+                  value="{{RXHDFunctionality}}" style="width: 180px;">
+            <option value="">---Please select---</option>
+          </select>
+        </div>
+  </p>
+  
+  <table class="table table-bordered table-style">
+        <thead>
+        <tr>
+          <th>Application</th>
+          <th>Number Of Test Cases</th>
+          <th>Automated</th>
+          <th>Manual</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{selectedApplication}}</td>
+          <td>{{ApplicationNumberOfTestCases}}</td>
+          <td>{{ApplicationFullyAutomated}}</td>
+          <td>{{ApplicationPartiallyAutomated}}</td>
+        </tr>
+        </tbody>
+  </table>
+  
+  <div google-chart chart="ApplicationChartObject" style="height: 0px;width: 25%;position: relative;left: 928px;top: -122px;"></div>
+
+      <table ng-hide="businessCapability" class="table table-bordered table-style" style="top: 100px;">
+        <thead>
+        <tr>
+          <th>Application/Business Capability</th>
+          <th>Number Of Test Cases</th>
+          <th>Automated</th>
+          <th>Manual</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{selectedApplication}}/{{selectedBusiness}}</td>
+          <td>{{BussinessNumberOfTestCases}}</td>
+          <td>{{BussinessFullyAutomated}}</td>
+          <td>{{BussinessPartiallyAutomated}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <div google-chart chart="BCChartObject" style="height: 0px;width: 25%;position: relative;left: 928px;top: -50px;"></div>
+
+      <table ng-hide="functionality" class="table table-bordered table-style" style="top: 155px;">
+        <thead>
+        <tr>
+          <th>Application/Business Capability/Functionality</th>
+          <th>Number Of Test Cases</th>
+          <th>Automated</th>
+          <th>Manual</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{selectedApplication}}/{{selectedBusiness}}/{{selectedFunctionality}}</td>
+          <td>{{FunctionalityNumberOfTestCases}}</td>
+          <td>{{FunctionalityFullyAutomated}}</td>
+          <td>{{FunctionalityPartiallyAutomated}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <div google-chart chart="FunctionalityChartObject" style="height: 0px;width: 25%;position: relative;left: 928px;top: -7px;"></div>
+      <a href="" ng-click="backBtn()" style="position: absolute;top: 50px;right: 181px;font-size: 19px;">< Back</a>
+      <footer class="container-fluid" style="position: relative;width: 100%;bottom: -601px;left: 0px;">
+         <hr class="horizontal-line" />
+          <p align="right">© 2015 Accenture.</p>
+      </div>
+      </footer> -->
+</div>
