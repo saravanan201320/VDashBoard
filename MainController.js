@@ -25,16 +25,8 @@
     $scope.DentalnumberOfTestCases = 0;
     $scope.DentalFullyAutomated = 0;
     $scope.DentalPartiallyAutomated = 0;
-    var getJSONData = $http({
-      method: "GET",
-      url: "DashBordData.json",
-      headers: {
-                    'Accept': 'application/json, text/javascript',
-                        'Content-Type': 'application/json; charset=utf-8'
-                }     
-    });
-    getJSONData.success(function (data) {
-      $rootScope.groups = data;    
+
+      var data = $rootScope.groups;
       for (var i = 0; i < data.ASG.length; i++){
         $scope.ASGNames.push(data.ASG[i].Group.groupName);
         if (data.ASG[i].Group.groupName == "Rx-HD") {
@@ -326,7 +318,7 @@
       $scope.OverallChart.options = {
         colors:['#8CC63E','#DF6C4F']
       };
-    });
+   
   });
   /**
    * Created by saravana.sivakumar on 11/23/2015.
