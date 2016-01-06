@@ -248,25 +248,25 @@
         title:'RX-HD',
         l2:$scope.RXHDAutomated + '%' + ' Automated',
         l3:$scope.RXHDApplicationName.length+' Applications',
-        l4:$scope.RXHDnumberOfTestCases+' Scenarios'
+        l4:$scope.RXHDnumberOfTestCases+' Test Cases'
       };
       var d2 = {
         title:'RX-Core',
         l2:$scope.RXCoreAutomated + '%'+ ' Automated',
         l3:$scope.RXCoreApplicationName.length+' Applications',
-        l4:$scope.RXCorenumberOfTestCases+' Scenarios'
+        l4:$scope.RXCorenumberOfTestCases+' Test Cases'
       };
       var d3 = {
             title:'Group',
             l2:$scope.GroupAutomated + '%'+ ' Automated',
             l3:$scope.GroupApplicationName.length+' Applications',
-            l4:$scope.GroupnumberOfTestCases+' Scenarios'
+            l4:$scope.GroupnumberOfTestCases+' Test Cases'
           };
     var d4 = {
           title:'Dental',
           l2:$scope.DentalAutomated + '%'+ ' Automated',
           l3:+$scope.DentalApplicationName.length+' Applications',
-          l4:$scope.DentalnumberOfTestCases+' Scenarios'
+          l4:$scope.DentalnumberOfTestCases+' Test Cases'
         };
       $scope.chartObject.data = ([['ASG', 'ASG Name', 'Application Count', 'RAG'],
             ['SSGQA', null, 0, 20 ],

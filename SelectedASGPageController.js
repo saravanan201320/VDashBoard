@@ -97,7 +97,7 @@ SelectedASGPageControllers.controller('SelectedASGPageController', function($sco
       $scope.RXHDFunctionality = $filter('unique')($scope.RXHDFunctionality);
       $scope.RXHDApplicationAutomated = ($scope.RXHDApplicationFullyAutomated/$scope.RXHDApplicationNumberOfTestCases)*100;
       $scope.RXHDApplicationAutomated = $filter('number')($scope.RXHDApplicationAutomated, 0);
-      $scope.RXHDBussinessCapabilityData.push([JSON.stringify({"title":RXHDApplication,"l1":$scope.RXHDBussinessCapability.length+' Business Capability',"l2":$scope.RXHDApplicationAutomated+ '% Automated', "l3":$scope.RXHDApplicationNumberOfTestCases+' Scenarios'}),'RX-HD',$scope.RXHDBussinessCapability.length, $scope.RXHDApplicationFullyAutomated/$scope.RXHDApplicationNumberOfTestCases]);        
+      $scope.RXHDBussinessCapabilityData.push([JSON.stringify({"title":RXHDApplication,"l1":$scope.RXHDBussinessCapability.length+' Business Capability',"l2":$scope.RXHDApplicationAutomated+ '% Automated', "l3":$scope.RXHDApplicationNumberOfTestCases+' Test Cases'}),'RX-HD',$scope.RXHDBussinessCapability.length, $scope.RXHDApplicationFullyAutomated/$scope.RXHDApplicationNumberOfTestCases]);        
       $scope.RXHDApplicationDatas.push({"ApplicationName":RXHDApplication,"Total":$scope.RXHDApplicationNumberOfTestCases,"Automated":$scope.RXHDApplicationFullyAutomated, "Manual": $scope.RXHDApplicationPartiallyAutomated})
       $scope.RXHDFunctionalityData.push({"text": $scope.RXHDBussinessCapability, "value": $scope.RXHDBussinessCapability.length});
       $scope.RXHDBussinessCapability = [];
@@ -120,7 +120,7 @@ SelectedASGPageControllers.controller('SelectedASGPageController', function($sco
       $scope.RXCoreApplicationCoreAutomated = ($scope.RXCoreApplicationFullyAutomated/$scope.RXCoreApplicationNumberOfTestCases)*100;
       $scope.RXCoreApplicationCoreAutomated = $filter('number')($scope.RXCoreApplicationCoreAutomated, 0);
       $scope.RXCoreBussinessCapability = $filter('unique')($scope.RXCoreBussinessCapability);
-      $scope.RXCoreBussinessCapabilityData.push([JSON.stringify({"title":RXCoreApplication,"l1":$scope.RXCoreBussinessCapability.length+' Business Capability',"l2":$scope.RXCoreApplicationCoreAutomated+ '% Automated', "l3":$scope.RXHDApplicationNumberOfTestCases+' Scenarios'}),'RX-Core',$scope.RXCoreBussinessCapability.length, $scope.RXCoreApplicationFullyAutomated/$scope.RXCoreApplicationNumberOfTestCases]);
+      $scope.RXCoreBussinessCapabilityData.push([JSON.stringify({"title":RXCoreApplication,"l1":$scope.RXCoreBussinessCapability.length+' Business Capability',"l2":$scope.RXCoreApplicationCoreAutomated+ '% Automated', "l3":$scope.RXHDApplicationNumberOfTestCases+' Test Cases'}),'RX-Core',$scope.RXCoreBussinessCapability.length, $scope.RXCoreApplicationFullyAutomated/$scope.RXCoreApplicationNumberOfTestCases]);
       $scope.RXCoreApplicationDatas.push({"ApplicationName":RXCoreApplication, "Total":$scope.RXCoreApplicationNumberOfTestCases,"Automated":$scope.RXCoreApplicationFullyAutomated, "Manual": $scope.RXCoreApplicationPartiallyAutomated})
       $scope.RXCoreBussinessCapability = [];
     };
@@ -141,7 +141,7 @@ SelectedASGPageControllers.controller('SelectedASGPageController', function($sco
       $scope.GroupApplicationAutomated = ($scope.GroupApplicationFullyAutomated/$scope.GroupApplicationNumberOfTestCases)*100;
       $scope.GroupApplicationAutomated = $filter('number')($scope.GroupApplicationAutomated, 0);
       $scope.GroupBussinessCapability = $filter('unique')($scope.GroupBussinessCapability);
-      $scope.GroupBussinessCapabilityData.push([JSON.stringify({"title":GroupApplication,"l1":$scope.GroupBussinessCapability.length+' Business Capability',"l2":$scope.GroupApplicationAutomated+ '% Automated', "l3":$scope.GroupApplicationNumberOfTestCases+' Scenarios'}),'Group',$scope.GroupBussinessCapability.length, $scope.GroupApplicationFullyAutomated/$scope.GroupApplicationNumberOfTestCases]);
+      $scope.GroupBussinessCapabilityData.push([JSON.stringify({"title":GroupApplication,"l1":$scope.GroupBussinessCapability.length+' Business Capability',"l2":$scope.GroupApplicationAutomated+ '% Automated', "l3":$scope.GroupApplicationNumberOfTestCases+' Test Cases'}),'Group',$scope.GroupBussinessCapability.length, $scope.GroupApplicationFullyAutomated/$scope.GroupApplicationNumberOfTestCases]);
       $scope.GroupApplicationDatas.push({"ApplicationName":GroupApplication, "Total":$scope.GroupApplicationNumberOfTestCases,"Automated":$scope.GroupApplicationFullyAutomated, "Manual": $scope.GroupApplicationPartiallyAutomated})
       $scope.GroupBussinessCapability = [];
     };
@@ -162,7 +162,7 @@ SelectedASGPageControllers.controller('SelectedASGPageController', function($sco
       $scope.DentalApplicationAutomated = ($scope.DentalApplicationFullyAutomated/$scope.DentalApplicationNumberOfTestCases)*100;
       $scope.DentalApplicationAutomated = $filter('number')($scope.DentalApplicationAutomated, 0);
       $scope.DentalBussinessCapability = $filter('unique')($scope.DentalBussinessCapability);
-      $scope.DentalBussinessCapabilityData.push([JSON.stringify({"title":DentalApplication,"l1":$scope.DentalBussinessCapability.length+' Business Capability',"l2":$scope.DentalApplicationAutomated+ '% Automated', "l3":$scope.DentalApplicationNumberOfTestCases+' Scenarios'}),'Dental',$scope.DentalBussinessCapability.length, $scope.DentalApplicationFullyAutomated/$scope.DentalApplicationNumberOfTestCases]);      
+      $scope.DentalBussinessCapabilityData.push([JSON.stringify({"title":DentalApplication,"l1":$scope.DentalBussinessCapability.length+' Business Capability',"l2":$scope.DentalApplicationAutomated+ '% Automated', "l3":$scope.DentalApplicationNumberOfTestCases+' Test Cases'}),'Dental',$scope.DentalBussinessCapability.length, $scope.DentalApplicationFullyAutomated/$scope.DentalApplicationNumberOfTestCases]);      
       $scope.DentalApplicationDatas.push({"ApplicationName":DentalApplication, "Total":$scope.DentalApplicationNumberOfTestCases,"Automated":$scope.DentalApplicationFullyAutomated, "Manual": $scope.DentalApplicationPartiallyAutomated})
       $scope.DentalBussinessCapability = [];
     };

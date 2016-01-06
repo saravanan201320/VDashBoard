@@ -51,14 +51,14 @@ SelectedApplicationPageControllers.controller('SelectedApplicationPageController
       $scope.mapColor = $scope.BCFullyAutomated/$scope.BCNumberOfTestCases;
     }
     if(x==0 || x==1 || x==2){
-      $scope.FunctionalityData.push([JSON.stringify({"title":$scope.bussinessCapability[x],"l1":$scope.functionality.length+' Functionality',"l2":$scope.BCAutomated, "l3":$scope.BCNumberOfTestCases+' Scenarios'}),Application,$scope.functionality.length, $scope.mapColor]);
+      $scope.FunctionalityData.push([JSON.stringify({"title":$scope.bussinessCapability[x],"l1":$scope.functionality.length+' Functionality',"l2":$scope.BCAutomated, "l3":$scope.BCNumberOfTestCases+' Test Cases'}),Application,$scope.functionality.length, $scope.mapColor]);
       $scope.functionality = [];
       $scope.BCNumberOfTestCases = 0;
       $scope.BCFullyAutomated = 0;
       $scope.BCPartiallyAutomated = 0; 
     }; 
     if(x==($scope.bussinessCapability.length-1) && x!=0 && x!=1 && x!=2){          
-      $scope.FunctionalityData.push([JSON.stringify({"title":"Others","l1":$scope.functionality.length+' Functionality',"l2":$scope.BCAutomated, "l3":$scope.BCNumberOfTestCases+' Scenarios'}),Application,4, $scope.mapColor]);          
+      $scope.FunctionalityData.push([JSON.stringify({"title":"Others","l1":$scope.functionality.length+' Functionality',"l2":$scope.BCAutomated, "l3":$scope.BCNumberOfTestCases+' Test Cases'}),Application,4, $scope.mapColor]);          
     }    
   }
   $scope.chartObject2 = {};
